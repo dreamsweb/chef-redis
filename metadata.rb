@@ -1,9 +1,9 @@
-name              "redis-tlq"
-maintainer        "Ben Dixon"
-maintainer_email  "ben@talkingquickly.co.uk"
-description       "Installs redis from rwky's ppa"
-version           "0.0.6"
+name              "chef-redis"
+maintainer        "Dwwd"
+maintainer_email  "info@dwwd.ru"
+description       "Installs redis from chris lea's ppa"
+version           "0.0.7"
 
-recipe "redis-tlq", "Installs redis"
+recipe "chef-redis", "Installs redis"
 
 supports "ubuntu"

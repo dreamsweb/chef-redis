@@ -1,10 +1,10 @@
-# use redis from ppa rather than the one 
-# available in the package manager. rwky
+# use redis from ppa rather than the one
+# available in the package manager.
 # builds the stable version and is kept
-# consistently up to date. We need python-software-properties
-# for add-apt-repository to work
+# consistently up to date. We need software-properties-common
+# for add-apt-repository to work (python-software-properties doesn't need anymore)
 
-package 'python-software-properties'
+package 'software-properties-common'
 
 bash 'adding stable redis ppa' do
   user 'root'
@@ -37,8 +37,6 @@ end
 execute "chown redis:redis /etc/redis"
 
 execute "restart-redis" do
-  # restart redis since we might have changed
-  # config.
   command "/etc/init.d/redis-server restart"
   action :nothing
 end

@@ -1,6 +1,6 @@
 #
-# Author:: Ben Dixon
-# Cookbook Name:: redis-tlq
+# Author:: Ben Dixon, Nick Chernyshev
+# Cookbook Name:: chef-redis
 # Attributes:: default
 #
 
